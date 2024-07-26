@@ -1,0 +1,71 @@
+{
+    "sounds": [
+        {
+            "name": "jump",
+            "res": "res/sound/jump.mp3"
+        }
+    ],
+    "animations": [
+        {
+            "name": "default",
+            "frames": [
+                "res/test.png"
+            ]
+        },
+        {
+            "name": "numbers",
+            "frames": [
+                "res/numbers/frame1.png",
+                "res/numbers/frame2.png",
+                "res/numbers/frame3.png",
+                "res/numbers/frame4.png",
+                "res/numbers/frame5.png",
+                "res/numbers/frame6.png",
+                "res/numbers/frame7.png",
+                "res/numbers/frame8.png",
+                "res/numbers/frame9.png"
+            ]
+        },
+        {
+            "name": "player",
+            "frames": [
+                "res/player/player.png"
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "player",
+            "x": 0,
+            "y": 90,
+            "w": 64,
+            "h": 64,
+            "center":false,
+            "behaviors": ["entity", "camera", "controlPad"],
+            "animation": "player",
+            "MaxVelocityX": 5,
+            "AccelerationX": 0.4,
+            "DecelerationX": 0.3,
+            "VelocityX": 0,
+            "MaxVelocityY": 5,
+            "AccelerationY": 0.4,
+            "DecelerationY": 0.3,
+            "VelocityY": 0
+        },
+        {
+            "name": "player3",
+            "x": -64,
+            "y": -64,
+            "w": 64,
+            "h": 64,
+            "center": false,
+            "speed": 10,
+            "angle": 0,
+            "rotation": 0,
+            "fliph": false,
+            "animation": "numbers",
+            "behaviors": ["obstacle"],
+            "visible": true
+        }
+    ]
+}
