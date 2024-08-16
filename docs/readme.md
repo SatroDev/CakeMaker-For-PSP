@@ -6,7 +6,7 @@ mediante la estructura de un [JSON](https://es.wikipedia.org/wiki/JSON) que perm
 ![](img/intro.png)
 
 Implementar cakemaker en tus proyecto facilitará la gestión de los archivos
-separandolos en:
+separándolos en:
 - Sonidos
 - Animaciones
 - Objetos
