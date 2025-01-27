@@ -1,6 +1,6 @@
 # Sounds
 
-Está estructura se conforma con dos parámetros, "name" y "res", nombre y ruta.
+Esta estructura se conforma con dos parámetros, "name" y "res" (nombre y ruta).
 Se complementa con la función "cake.play(x)" para su uso.
 
 Estructura en práctica:
