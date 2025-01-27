@@ -25,15 +25,14 @@ Ej:
 
 ## Behaviors
 
-En cakemaker se implementa behaviors (comportamientos) personalizados, para facilitar a otros
-código que sea complejo.
+En cakemaker se implementa behaviors (comportamientos) personalizados, con el objetivo de añadir código ya hecho y agilizar el desarrollo.
 
 Por defecto en cakemaker se incluye 3 comportamientos,
-- entity -> Puede interactuar con los elementos del juego.
-- obstacle -> Interactua con los objetos "entity".
-- camera -> establece una cámara a un objeto.
+- entity -> Puede interactuar con los obstáculos.
+- obstacle -> Interactúa con los objetos "entity".
+- camera -> establece una cámara y se fija al objeto.
 
-ejemplo:
+Ejemplo:
 
 ```json
 {
@@ -80,12 +79,12 @@ Para añadirlos en cakemaker deberás hacer lo siguiente:
     game.behaviors["nombre"] = my_function
 
     while true do
-        -- Leér las entradas.
+        -- Leer las entradas.
         buttons.read()
 
         -- Actualizar eventos.
         cake.update()
-        -- Establecer el modo "pixelado".
+        -- Desactivar el Anti-aliasing.
         screen.bilinear(0)
 
         -- Mostrar en pantalla.
